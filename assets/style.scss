@@ -29,11 +29,57 @@ $font: 'Roboto';
         display: flex;
         justify-content: space-between;
     }
+
+    #home > &{
+        height: calc(100vh - 113px);
+        display: flex;
+        align-items: center;
+
+        @media all and (max-width: 500px)
+        {
+            height: calc(100vh - 140px); 
+        }
+    }
 }
 
 #home{
     background-color: $bg3;
     font-family: $font;
+
+    #jumbotron{
+        color: white;
+        width: 40%;  
+        h1{
+            font-size: 64px;
+            margin: 20px 0;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        a{
+            width: 40%;
+            margin-right: 5px;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        #contactez{
+            background-color: #15d0e8;
+        }
+
+        #voir{
+            background-color: transparent;
+            border: solid 1px white;
+        }
+
+    }
+
 }
 
 header{
@@ -77,6 +123,11 @@ header{
                         text-decoration: none;
                         font-size: 24px;
                     }
+                }
+
+                @media all and (max-width: 768px)
+                {
+                    display: none;
                 }
             }
         }
