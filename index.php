@@ -41,5 +41,68 @@
             </div>
         </div>
     </div>
+    <div class="slide" id="eta">
+        <div class="wrapper">
+            <h2>Etablissements</h2>
+            <div class="schools">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="mon image">
+                    <div class="info">
+                        <h3>School Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
+                        <a href="#" class='savoir'>En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

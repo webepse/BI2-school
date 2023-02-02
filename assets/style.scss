@@ -67,6 +67,13 @@ $font: 'Roboto';
             color: white;
             text-decoration: none;
             border-radius: 10px;
+
+            @media all and (max-width: 500px)
+            {
+                display: block;
+                width: 60%;
+                margin-bottom: 10px;
+            }
         }
 
         #contactez{
@@ -78,6 +85,10 @@ $font: 'Roboto';
             border: solid 1px white;
         }
 
+        @media all and (max-width: 768px)
+        {
+            width: 80%;
+        }
     }
 
 }
@@ -131,6 +142,65 @@ header{
                 }
             }
         }
+    }
+
+}
+
+#eta{
+    font-family: $font;
+
+    h2{
+        font-size: 36px;
+    }
+
+    .schools{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        .card{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+
+            img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .info{
+                padding: 15px;
+
+                h3,p{
+                    margin-bottom: 15px;
+                }
+
+                a{
+                    display: block;
+                    background-color: #15d0e8;
+                    padding: 5px 10px;
+                    width: 150px;
+                    text-align: center;
+                    color: black;
+                    text-decoration: none; 
+                    border-radius: 10px;
+                }
+              
+            }
+
+        }
+
+        @media all and (max-width: 768px)
+        {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media all and (max-width: 500px)
+        {
+            grid-template-columns: 1fr;
+        }
+
     }
 
 }
