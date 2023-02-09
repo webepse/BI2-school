@@ -236,6 +236,12 @@ header{
                     position: relative;
                     left: -25%;
                     font-size: 40px;
+                    @media all and (max-width: 768px) {
+                        left: 0;
+                    }
+                }
+                @media all and (max-width: 768px) {
+                    left: 0;
                 }
 
             }
@@ -245,12 +251,115 @@ header{
             }
         }
 
+        @media all and (max-width: 768px) {
+            width: 100%;
+        }
+
     }
 
     .droite{
         width: 65%;
         min-height: 100vh;
         background-color: $bg1;
+        display: flex;
+
+        form{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            justify-content: space-between;
+            color: white;
+            h3{
+                width: 100%;
+            }
+            label{
+                display: block;
+                color: #AFAEAE;
+            }
+            @media all and (max-width: 768px)
+            {
+                width: 80%;
+            }
+            @media all and (max-width: 600px)
+            {
+                width: 90%;
+            }
+        }
+
+        .form-group{
+            border: solid 1px black;
+            border-radius: 4%;
+            padding: 15px;
+            margin: 15px 0;
+            input,textarea{
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 20px;
+                font-family: $font;
+                &:focus{
+                    outline: none;
+                }
+
+            }
+            textarea{
+                resize: none;
+                height: 300px;
+            }
+        }
+
+        .group{
+            display: flex;
+            align-items: center;
+            input[type=checkbox]
+            {
+                accent-color: $bg1;
+                border: solid 1px black;
+                width: 30px;
+                height: 30px;
+                appearance: none;
+                
+                &:checked{
+                    appearance: auto;
+                }
+            }
+            label{
+                display: inline-block;
+                line-height: 30px;
+                margin-left: 10px;
+            }
+            input[type=submit]
+            {
+                background-color: #15d0e8;
+                padding: 5px 10px;
+                border: none;
+                font-size: 20px;
+                font-weight: bolder;
+                border-radius: 10%;
+                font-family: $font;
+            }
+        }
+
+        .form-group.v1{
+            width: 40%;
+
+            @media all and (max-width: 992px) {
+                width: 100%;
+            }
+        }
+        
+        .form-group.v2{
+            width: 100%;
+        }
+
+        @media all and (max-width: 768px){
+            width: 100%;
+        }
     }
 
 }
+
+

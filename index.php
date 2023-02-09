@@ -116,7 +116,34 @@
                 </div>
             </div>
         </div>
-        <div class="droite"></div>
+        <div class="droite">
+            <form action="#" method="POST">
+                <h3>Envoyez nous un message</h3>
+                <div class="form-group v1">
+                    <label for="nom">Last Name</label>
+                    <input type="text" value="" id="nom" name="nom">
+                </div>
+                <div class="form-group v1">
+                    <label for="prenom">First Name</label>
+                    <input type="text" value="" id="prenom" name="prenom">
+                </div>
+                <div class="form-group v2">
+                    <label for="mail">Email Adress</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="form-group v2">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="group">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Newsletter</label>
+                </div>
+                <div class="group">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
