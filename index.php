@@ -1,3 +1,6 @@
+<?php
+    require "connexion.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,62 +48,22 @@
         <div class="wrapper">
             <h2>Etablissements</h2>
             <div class="schools">
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://picsum.photos/400/300" alt="mon image">
-                    <div class="info">
-                        <h3>School Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque vero eius aut repellat impedit. Voluptate pariatur, quod ea adipisci facilis eveniet doloremque quis perferendis obcaecati, repellat nam maxime asperiores modi sint hic veniam libero? Aperiam ducimus adipisci voluptatem similique commodi iusto velit aut quod nihil, perferendis atque corrupti veniam illum, fuga voluptate ex? Autem culpa cupiditate eveniet eum quod.</p>
-                        <a href="#" class='savoir'>En savoir plus</a>
-                    </div>
-                </div>
+            <?php
+                $req = $bdd->query("SELECT * FROM schools");
+                while($don = $req->fetch())
+                {
+                   echo '<div class="card">';
+                    echo '<img src="images/'.$don['image'].'" alt="Image de '.$don['nom'].'">';
+                    echo '<div class="info">';
+                        echo '<h3>'.$don['nom'].'</h3>';
+                        echo '<p>'.$don['description'].'</p>';
+                        echo '<a href="etablissement.php?id='.$don['id'].'" class=\'savoir\'>En savoir plus</a>';
+                    echo '</div>';
+                   echo '</div>';
+                }
+                $req->closeCursor();
+
+            ?>
             </div>
         </div>
     </div>
